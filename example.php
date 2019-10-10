@@ -10,5 +10,6 @@ $deepzoom = Jeremytubbs\Deepzoom\DeepzoomFactory::create([
 
 // folder, file are optional and will default to filename
 $inputFile="KISS.jpg";
+$inputFile=$argv[1];
 $outputFolder=basename($inputFile,".jpg");
 $response = $deepzoom->makeTiles($inputFile, 'file', $outputFolder);
